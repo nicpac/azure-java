@@ -31,8 +31,8 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-    - task: CopyFiles@2
-      inputs:
-        SourceFolder: '$(system.defaultworkingdirectory)'
-        Contents: '**/*.jar'
-        TargetFolder: '$(build.artifactstagingdirectory)'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**/*.jar'
+    TargetFolder: '$(build.artifactstagingdirectory)'
